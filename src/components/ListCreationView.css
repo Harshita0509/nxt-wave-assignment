@@ -1,0 +1,120 @@
+.list-creation-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.list-creation-list-row {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  width: 100%;
+}
+
+.list-creation-list-container {
+  background: #f4f8fb;
+  border-radius: 8px;
+  padding: 16px;
+  min-width: 220px;
+  max-width: 320px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 12px #0001;
+  margin-bottom: 12px;
+  transition: box-shadow 0.2s;
+}
+.list-creation-list-title {
+  margin-bottom: 12px;
+}
+.list-creation-list-items {
+  list-style: none;
+  padding: 0;
+  flex: 1;
+  overflow-y: auto;
+  margin: 0;
+}
+.list-creation-list-item {
+  margin-bottom: 10px;
+  background: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 1px 4px #0001;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-creation-btn-row {
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.list-creation-cancel-btn {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #e74c3c22;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.list-creation-cancel-btn:hover {
+  background: #c0392b;
+}
+.list-creation-update-btn {
+  background: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #27ae6022;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.list-creation-update-btn:hover {
+  background: #219150;
+}
+
+@media (max-width: 900px) {
+  .list-creation-list-row {
+    gap: 12px;
+  }
+  .list-creation-list-container {
+    min-width: 160px;
+    max-width: 220px;
+    height: 320px;
+    padding: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .list-creation-list-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .list-creation-list-container {
+    width: 90vw;
+    min-width: 0;
+    max-width: 100vw;
+    height: 220px;
+    padding: 8px;
+  }
+  .list-creation-btn-row {
+    flex-direction: column;
+    width: 90vw;
+    gap: 10px;
+  }
+  .list-creation-cancel-btn,
+  .list-creation-update-btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 0;
+  }
+}
